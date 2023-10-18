@@ -5,11 +5,11 @@ using UnityEngine;
 public class ItemSpawnManager : MonoBehaviour
 {
     public GameObject[] itemPrefabs; // Array to store Items
-    private float spawnRangeX = 25f;
+    private float spawnRangeX = 20f;
     private float spawnPosZ = 20f;
     
-    private float startDelay = 15f;
-    private float spawnInterval = 1.5f;
+    private float startDelay = 1f;
+    private float spawnInterval = 20f;
     
     void Start()
     {

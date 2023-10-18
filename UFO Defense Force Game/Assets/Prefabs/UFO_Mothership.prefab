@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 6416596430511215784}
   - component: {fileID: -6805426485509220193}
   - component: {fileID: -6268567437163321391}
-  - component: {fileID: 3290207892533693151}
+  - component: {fileID: 8605266949573800264}
   m_Layer: 0
   m_Name: UFO_Mothership
   m_TagString: Untagged
@@ -144,7 +144,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &3290207892533693151
+--- !u!114 &8605266949573800264
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -153,6 +153,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7686989169724960371}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d1fb59aeb72b7a9468ab07b0b37fbd74, type: 3}
+  m_Script: {fileID: 11500000, guid: e9dbbdae86ad6904aa3b50ea770572a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}
+  scoreToGive: 5
