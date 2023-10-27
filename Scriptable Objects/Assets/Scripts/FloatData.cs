@@ -11,7 +11,7 @@ public class FloatData : ScriptableObject
 
    public void UpdateValue(float number)
    {
-        value += number;
+      value += number;
    }
 
 
