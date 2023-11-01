@@ -1,3 +1,4 @@
+
 using UnityEngine;
 
 public class AmmoPowerUp : MonoBehaviour
@@ -15,11 +16,11 @@ public class AmmoPowerUp : MonoBehaviour
 
     private void AddAmmo(GameObject player)
     {
-        WeaponController weaponController = player.GetComponent<WeaponController>();
+        ///WeaponController weaponController = player.GetComponent<WeaponController>();
 
-        if(weaponController != null)
+        ///if(weaponController != null)
         {
-            weaponController.AddAmmo(ammoValue.value);
+            ///weaponController.AddAmmo(ammoValue.value);
         }
     }
 }
