@@ -14,8 +14,5 @@ public class IntData : ScriptableObject
         value += number;
     }
 
-    public void ReplaceValue(int number)
-    {
-        value = number;
-    }
+
 }
