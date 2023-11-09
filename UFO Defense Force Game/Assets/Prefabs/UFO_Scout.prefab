@@ -158,3 +158,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scoreManager: {fileID: 0}
   scoreToGive: 20
+  explosionParticle: {fileID: 8798824767738250001, guid: 1f9221b4b13e15545834e055714a4f6b, type: 3}
