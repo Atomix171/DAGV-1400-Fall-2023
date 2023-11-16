@@ -12,10 +12,11 @@ public class MatchBehaviour : IDContainerBehaviour
     {
         var tempObj = other.GetComponent<IDContainerBehaviour>();
         if(tempObj == null)
-            yield break;
+        {
+           yield break; 
+        }
+            
         
-        
-
         var otherID = tempObj.idObj;
         if(otherID == idObj)
         {
