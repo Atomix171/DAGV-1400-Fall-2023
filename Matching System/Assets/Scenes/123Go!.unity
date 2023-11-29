@@ -544,10 +544,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1747056042}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61c4af152f4afee4e9dce7f015d49c84, type: 3}
+  m_Script: {fileID: 11500000, guid: f1ef3992018d58c419784dfe66f369a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1747056044}
+        m_TargetAssemblyTypeName: CoroutineBehaviour, Assembly-CSharp
+        m_MethodName: StartCounting
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  startCountEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 11400000, guid: 7d9c973ee54754d40acba734e09fbb99, type: 2}
@@ -562,21 +577,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  repeatEvent:
+  repeatCountEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1233278949}
-        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: On
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 470727775}
         m_TargetAssemblyTypeName: TextLabelBehaviour, Assembly-CSharp
         m_MethodName: UpdateLabel
@@ -589,7 +592,19 @@ MonoBehaviour:
           m_StringArgument: On
           m_BoolArgument: 0
         m_CallState: 2
-  endEvent:
+      - m_Target: {fileID: 1233278949}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: SetTrigger
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: On
+          m_BoolArgument: 0
+        m_CallState: 2
+  endCountEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1233278949}
@@ -616,6 +631,10 @@ MonoBehaviour:
           m_StringArgument: Go!
           m_BoolArgument: 0
         m_CallState: 2
+  repeatUntilFalseEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  canRun: 0
   counterNum: {fileID: 11400000, guid: 7d9c973ee54754d40acba734e09fbb99, type: 2}
   seconds: 1
 --- !u!1660057539 &9223372036854775807

@@ -12,7 +12,7 @@ public class CoroutineBehaviour : MonoBehaviour
     private WaitForSeconds wfsObj;
     private WaitForFixedUpdate wffuObj;
 
-    private void start()
+    private void Start()
     {
         wfsObj = new WaitForSeconds(seconds);
         wffuObj = new WaitForFixedUpdate();
@@ -26,8 +26,6 @@ public class CoroutineBehaviour : MonoBehaviour
 
     private IEnumerator Counting()
     {
-
-        
         startCountEvent.Invoke();
         yield return wfsObj;
         while (counterNum.value > 0)

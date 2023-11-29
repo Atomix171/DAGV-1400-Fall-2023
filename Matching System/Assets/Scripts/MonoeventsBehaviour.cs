@@ -5,12 +5,12 @@ public class MonoeventsBehaviour : MonoBehaviour
 {
     public UnityEvent startEvent,awakeEvent,disableEvent;
 
-    private void awake()
+    private void Awake()
     {
         awakeEvent.Invoke();
     }
 
-    private void start()
+    private void Start()
     {
         startEvent.Invoke();
     }
